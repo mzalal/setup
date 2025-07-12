@@ -72,8 +72,8 @@ cp -r config/.gitignore ~/.config
 cp -r config/* ~/.config
 
 step "Generate SSH keys"
-ssh-keygen -t ed25519 -C "PRIMARY"
-ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_secondary -C "SECONDARY"
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N "" -C "PRIMARY"
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_secondary -N "" -C "SECONDARY"
 
 step "Set Bash aliases"
 echo "source ~/.config/alias.sh" >> ~/.bashrc
