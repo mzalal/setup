@@ -1,6 +1,6 @@
 #!/bin/bash
 
-total_steps=11
+total_steps=12
 current_step=1
 
 function step() {
@@ -74,6 +74,9 @@ cp -r config/* ~/.config
 step "Generate SSH keys"
 ssh-keygen -t ed25519 -C "PRIMARY"
 ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_secondary -C "SECONDARY"
+
+step "Set Bash aliases"
+echo "source ~/.config/alias.sh" >> ~/.bashrc
 
 step "Manual setup"
 cat ./manual-setup.txt
