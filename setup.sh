@@ -61,7 +61,7 @@ sudo dnf install -y\
     git\
     tldr\
     btop\
-    VirtualBox\
+    virt-manager\
     brave-browser\
     code
 flatpak install -y md.obsidian.Obsidian
