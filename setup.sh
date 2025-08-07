@@ -60,6 +60,7 @@ sudo dnf install -y\
     calibre\
     git\
     tldr\
+    btop\
     VirtualBox\
     brave-browser\
     code
